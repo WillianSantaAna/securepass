@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SecurePass - Hybrid Cloud</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Cloud Computing, and password security and protection.">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Area -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png"
+                    alt="SecurePass">Secure<span>Pass</span></a>
+
+            <button id="toggle" class="navbar-toggle" style="display: none"><i class="fas fa-bars"></i></button>
+
+            <nav id="navbar" class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="types.html">Types</a>
+                        <ul class="sub-menu">
+                            <li><a href="public.html">Public</a></li>
+                            <li><a href="private.html">Private</a></li>
+                            <li><a href="hybrid.html">Hybrid</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Scroll Icon Button -->
+        <button id="scrollUp" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+        <!-- Content Area -->
+        <section class="content-area">
+            <div class="container">
+                <h2 class="text-center">What's a Hybrid Cloud?</h2>
+                <p>
+                    <strong>Hybrid cloud</strong> is a computing environment that combines a public cloud and a private cloud 
+                    by allowing data and applications to be shared between them. When computing and processing 
+                    demand fluctuates, hybrid cloud computing gives businesses the ability to seamlessly scale 
+                    their on-premises infrastructure up to the public cloud to handle any overflow—without giving 
+                    third-party datacenters access to the entirety of their data. Organizations gain the flexibility 
+                    and computing power of the public cloud for basic and non-sensitive computing tasks, while 
+                    keeping business-critical applications and data on-premises, safely behind a company firewall.
+                </p>
+                <p>
+                    Using a hybrid cloud not only allows companies to scale computing resources, it also eliminates 
+                    the need to make massive capital expenditures to handle short-term spikes in demand as well as 
+                    when the business needs to free up local resources for more sensitive data or applications. 
+                    Companies will pay only for resources they temporarily use instead of having to purchase, 
+                    program, and maintain additional resources and equipment that could remain idle over long periods 
+                    of time. Hybrid cloud computing is a “best of all possible worlds” platform, delivering all the 
+                    benefits of cloud computing—flexibility, scalability, and cost efficiencies—with the lowest 
+                    possible risk of data exposure.
+                </p>
+            </div>
+
+            <div class="container grid-2">
+                <article>
+                    <h3>Are hybrid clouds secure?</h3>
+                    <p>
+                        A properly designed, integrated, and managed hybrid cloud can be as secure as traditional 
+                        on-premise IT infrastructure. While there are some unique hybrid cloud security challenges 
+                        (like data migration, increased complexity, and a larger attack surface), the presence of 
+                        multiple environments can be one of the strongest defenses against security risks. All those 
+                        interconnected environments let enterprises choose where to place sensitive data based on 
+                        requirements, and it lets security teams standardize redundant cloud storage that can 
+                        augment disaster recovery efforts.
+                    </p>
+                </article>
+
+                <div data-wow-delay="300ms">
+                    <img src="assets/images/800x800-4.png" alt="">
+                </div>
+            </div>
+
+            <div class="container">
+                <article>
+                    <h3>Benefits of hybrid cloud</h3>
+                    <p>
+                        <strong>Flexibility:</strong> Businesses that regularly experience spikes 
+                        in demand might implement a hybrid cloud solution so that they can use a 
+                        private cloud to run most of the workloads and access the public cloud only when usage spikes.
+                    </p>
+                    <p>
+                        <strong>Structure and separation:</strong> Hybrid cloud also offers an 
+                        alternative for storing sensitive data—a company might provide services via a 
+                        public cloud while keeping sensitive information safe on a private cloud.
+                    </p>
+                    <p>
+                        While a private cloud is less expensive than using a public cloud 
+                        (after an initial investment in the infrastructure), it does not easily scale. 
+                        Growing the infrastructure requires the purchase of additional equipment. 
+                        If usage of the private cloud shrinks, that expensive equipment sits unused.
+                    </p>
+                </article>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="types.html">Types</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <span class="copyright">&copy; 2020 &nbsp; <a href="index.html">SecurePass</a></span>
+        </div>
+    </footer>
+
+    <script src="js/view/Scroll.js"></script>
+    <script src="js/view/Preloader.js"></script>
+    <script src="js/view/Menu.js"></script>
+    <script src="js/controller/Controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

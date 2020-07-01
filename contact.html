@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SecurePass - Contact</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Cloud Computing, and password security and protection.">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- Header Area -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png"
+                    alt="SecurePass">Secure<span>Pass</span></a>
+
+            <button id="toggle" class="navbar-toggle" style="display: none"><i class="fas fa-bars"></i></button>
+
+            <nav id="navbar" class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="types.html">Types</a>
+                        <ul class="sub-menu">
+                            <li><a href="public.html">Public</a></li>
+                            <li><a href="private.html">Private</a></li>
+                            <li><a href="hybrid.html">Hybrid</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Scroll Icon Button -->
+        <button id="scrollUp" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+        <!-- Content Area -->
+        <section class="content-area">
+
+            <div class="container">
+                <article>
+                    <h2 class="text-center">Contact Us</h2>
+                    <p class="text-center">Do you have any doubt?</p>
+                    <p class="text-center">Do not hesitate to send us a message. We will contact you as soon as possible.</p>
+                    <form method="post" action="" class="form">
+                        <div class="grid-2">
+                            <div>
+                                <labe class="hidden">Name</labe>
+                                <input type="text" name="name" id="name" placeholder="Name" required>
+                            </div>
+                            <div>
+                                <labe class="hidden">Email</labe>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <labe class="hidden">Subject</labe>
+                        <input type="subject" name="subject" id="subject" placeholder="Subject" required>
+                        <labe class="hidden">Message</labe>
+                        <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        <button type="submit" id="submit" class="btn btn-blue">Send Message</button>
+                    </form>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="authors">
+            <div class="container grid-2">
+                <article>
+                    <h3>Developers</h3>
+                    <ul>
+                        <li>Felipe Gomes Silva</li>
+                        <li>Willian Felipe SantaAna</li>
+                    </ul>
+                    <p>Computer Engineering students at IADE Creative University</p>
+                    <p><i>Completely developed without using frameworks ...</i></p>
+                    <img src="assets/images/logo_iade.png" alt="">
+                </article>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d550.3881378673076!2d-9.152250158418791!3d38.70712087747264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934838cfa1033%3A0x36de966c91888246!2sIADE%20-%20Creative%20University!5e0!3m2!1sen!2spt!4v1591796025878!5m2!1sen!2spt"
+                        width="100%" height="350px" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="types.html">Types</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <span class="copyright">&copy; 2020 &nbsp; <a href="index.html">SecurePass</a></span>
+        </div>
+    </footer>
+
+    <script src="js/view/Scroll.js"></script>
+    <script src="js/view/Preloader.js"></script>
+    <script src="js/view/Menu.js"></script>
+    <script src="js/controller/Controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

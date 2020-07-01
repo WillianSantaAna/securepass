@@ -1,0 +1,841 @@
+/* ------------------------------------------
+    01.0 Reboot Area CSS
+    02.0 Preloader Area CSS
+    03.0 Header Area CSS
+    04.0 Welcome Area CSS
+    05.0 Dark Area CSS
+    06.0 Scroll Button CSS
+    07.0 Banner Area CSS
+    08.0 Pricing Area CSS
+    09.0 Buttons CSS
+    10.0 Authors Area CSS
+    11.0 Footer Area CSS
+    12.0 Form Area CSS
+    13.0 Grid Area CSS
+--------------------------------------------- */
+
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
+
+/* Color Palette */
+:root {
+    --primarySwatch: #ffffff;
+    --primatyColor: #000113;
+    --secundaryColor: #02b3ff;
+    --accentColor: #111343;
+}
+
+/* 01.0 Reboot Area CSS */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    z-index: auto;
+}
+
+main {
+    min-height: calc(100vh - 270px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    color: #737c85;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+    color: var(--accentColor);
+    text-decoration: none;
+    transition-duration: 500ms;
+    outline: none;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.8;
+    color: #737c85;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+span {
+    color: #737c85;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.content-area {
+    background: var(--primarySwatch);
+    padding: 50px 16px 50px 16px;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.list li {
+    list-style: disc inside !important;
+    color: var(--secundaryColor);
+}
+
+/* 02.0 Preloader Area CSS */
+.hide {
+    display: none;
+    opacity: 0;
+    transition: opacity 800ms;
+}
+
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(120deg, var(--primatyColor) 0%, #00378f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loader {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-top: 2px solid var(--primarySwatch);
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    animation: loader linear 2s infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 03.0 Header Area CSS */
+.header {
+    background: var(--primatyColor);
+    z-index: 99;
+}
+
+.header .logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--primarySwatch);
+    background: var(--primatyColor);
+    display: inline-block;
+    padding: 24px 32px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header .logo span {
+    color: var(--secundaryColor);
+}
+
+.header .logo img {
+    height: 25px;
+    padding-right: 5px;
+}
+
+.nav {
+    transition: max-height 1s;
+}
+
+
+.nav .menu {
+    background: var(--primarySwatch);
+}
+
+.nav li {
+    text-align: center;
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primatyColor);
+    font-weight: 600;
+    display: block;
+    padding: 20px 0;
+    font-size: 14px;
+    transition: .5s ease;
+}
+
+.nav a:hover {
+    color: var(--secundaryColor)
+}
+
+.navbar-toggle {
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    float: right;
+    margin: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.fa-bars {
+    color: var(--primarySwatch);
+    transition: .5s ease;
+}
+
+.fa-bars:hover {
+    color: var(--secundaryColor);
+}
+
+/* 04.0 Welcome Area CSS */
+.welcome-area {
+    background: url(../assets/images/1920x931-welcome.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+
+.welcome-area h1 {
+    max-width: 700px;
+    color: var(--primarySwatch);
+    padding: 30px 20px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.welcome-area p {
+    background: rgba(0, 0, 0, .4);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primarySwatch);
+    padding: 20px;
+    margin: 5px 24px 24px;
+}
+
+/* 05.0 Dark Area CSS */
+.dark h2,
+.dark h3,
+.dark h4 {
+    color: var(--primarySwatch);
+}
+
+.dark p {
+    color: var(--primarySwatch);
+}
+
+.dark li {
+    color: var(--secundaryColor);
+    line-height: 32px;
+}
+
+.dark a {
+    color: var(--secundaryColor);
+}
+
+.dark a:hover {
+    color: #008eca;
+}
+
+.content-area.dark {
+    background: var(--primatyColor);
+    padding-top: 56px;
+    padding-bottom: 56px;
+    border-top: 1px solid #ccc;
+}
+
+/* 06.0 Scroll Button CSS */
+#scrollUp {
+    z-index: 99;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--secundaryColor);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+#scrollUp:hover {
+    background-color: #586165;
+}
+
+/* 07.0 Banner Area CSS */
+.banner-area {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(../assets/images/1920x1080-banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+}
+
+.banner-area .image-overlay {
+    background: rgba(34, 34, 34, 0.65);
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.banner-area article {
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-area p {
+    color: var(--primarySwatch);
+}
+
+.banner-area h3 {
+    color: var(--primarySwatch);
+}
+
+/* 08.0 Pricing Area CSS */
+.pricing-area {
+    background: var(--primarySwatch);
+    align-content: center;
+    padding-bottom: 100px;
+}
+
+.pricing-area .card-body {
+    margin: auto;
+    margin-bottom: 16px;
+    border: none;
+    text-align: center;
+    width: 280px;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--primarySwatch);
+    transition: 0.5s ease;
+}
+
+.pricing-area hr {
+    margin: 24px 0;
+}
+
+.pricing-area .card-title {
+    margin: 8px 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.pricing-area .card-price {
+    font-size: 48px;
+    margin: 0;
+}
+
+.pricing-area .card-price .period {
+    font-size: 10px;
+}
+
+.pricing-area ul li {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.pricing-area .card-body:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.pricing-area .card-body:hover .btn {
+    opacity: 1;
+}
+
+.card-body .fa-check {
+    color: var(--secundaryColor);
+}
+
+.card-body .fa-times {
+    color: red;
+}
+
+#pop_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    z-index: 20;
+    opacity: 0; 
+    transition: .5s ease;
+}
+
+.pop_form {
+    position: fixed;
+    top: 250px;
+    left: calc(50vw - 42.5vw);
+    margin-bottom: 25px;
+    width: 85vw;
+    padding: 30px 30px 30px 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    z-index: 21;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.pop_form form {
+    margin-top: 50px;
+}
+
+.pop_form button {
+    margin-top: 16px;
+}
+
+.pop_form h3 {
+    margin: 10px 0 10px 0;
+}
+
+/* 09.0 Buttons CSS */
+.btn {
+    padding: 16px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    border: 0 solid transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-white {
+    color: var(--primarySwatch);
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-white:hover {
+    color: var(--primatyColor);
+    background: rgba(256, 256, 256, 0.7);
+}
+
+.btn-blue-dark {
+    color: var(--accentColor);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.btn-blue-dark:hover {
+    color: var(--primatyColor);
+    background: rgba(17, 19, 64, 0.7);
+}
+
+.btn-blue {
+    color: var(--primarySwatch);
+    background: var(--secundaryColor);
+}
+
+.btn-blue:hover {
+    color: var(--primarySwatch);
+    background: var(--accentColor);
+}
+
+.btn-cancel {
+    color: #616161;
+    background-color: #aaaaaa;
+}
+
+.btn-cancel:hover {
+    color: var(--primarySwatch);
+    background-color: #797979;
+}
+
+/* 10.0 Authors Area CSS */
+.authors {
+    margin-bottom: 50px;
+}
+
+.authors ul li {
+    color: #737c85;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.authors img {
+    max-width: 300px;
+}
+
+.authors .map iframe{
+    border-radius: 25px;
+}
+
+
+/* 11.0 Footer Area CSS */
+.footer {
+    background: #00102a;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer ul {
+    margin-bottom: 32px;
+}
+
+.footer li {
+    margin: 0 16px 16px 16px;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.footer a {
+    color: var(--secundaryColor);
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.footer a:hover {
+    color: var(--primarySwatch);
+}
+
+.footer span {
+    color: var(--primarySwatch);
+    font-weight: 200;
+}
+
+/* 12.0 Form Area CSS */
+.form {
+    margin: auto;
+    max-width: 800px;
+}
+
+input,
+label,
+textarea {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    background: rgba(238, 238, 238, 0.5);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid var(--secundaryColor);
+}
+
+textarea {
+    height: 160px;
+    resize: none;
+}
+
+#submit {
+    width: 180px;
+    padding: 15px;
+}
+
+@media screen and (min-width: 767px) {
+    /* 01.0 Reboot Area CSS */
+    .container {
+        max-width: 720px;
+    }
+
+    /* 13.0 Grid Area CSS  */
+    .grid-3 {
+        display: grid;
+        grid-template-areas: 
+            "grid-1-3 grid-2-3"
+            "grid-3-3 grid-3-3"
+        ;
+        grid-gap: 24px;
+        align-items: center;
+    }
+
+    .grid-1-3 {
+        grid-area: grid-1-3;
+    }
+
+    .grid-2-3 {
+        grid-area: grid-2-3;
+    }
+
+    .grid-3-3 {
+        grid-area: grid-3-3;
+    }
+    
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    /* 01.0 Reboot Area CSS */
+    main {
+        padding-top: 74px;
+        min-height: calc(100vh - 172px);
+    }
+
+    .container {
+        max-width: 980px;
+    }
+
+    /*  03.0 Header Area CSS */
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: var(--primatyColor);
+    }
+
+    .header .logo {
+        width: 30%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .nav {
+        width: 100%;
+        float: right;
+        max-width: 70%;
+        text-align: right;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .nav .menu {
+        display: inline-block;
+        justify-content: space-around;
+        background: var(--primatyColor);
+    }
+    
+    .menu li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .menu li a {
+        display: block;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 30px 20px;
+    }
+
+    .menu li:hover>.sub-menu {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0px;
+    }
+    
+    .menu .sub-menu {
+        position: absolute;
+        width: 200px;
+        left: 0;
+        top: 100%;
+        text-align: left;
+        margin-top: 50px;
+        padding: 20px 0;
+        visibility: hidden;
+        opacity: 0;
+        background: white;
+        transition: all 0.4s;
+        box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.25);
+    }
+    
+    .menu .sub-menu li {
+        display: block;
+        text-align: left;
+    }
+    
+    .menu .sub-menu li a {
+        color: var(--primatyColor);
+        padding: 10px 20px;
+    }
+
+    .menu .sub-menu li a:hover {
+        color: var(--secundaryColor);
+    }
+
+    /* 08.0 Pricing Area CSS */
+    .pricing-area .card-body:hover {
+        margin-bottom: 0;
+    }
+
+    #pop_bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s ease;
+    }
+    
+    .pop_form {
+        position: fixed;
+        left: calc(50vw - 350px);
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        height: 400px;
+        padding: 30px 30px 30px 30px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s ease;
+    }
+    
+    .pop_form .form {
+        margin-top: 50px;
+    }
+
+    .pop_form h3 {
+        color: var(--accentColor) !important;
+        font-weight: 700;
+    }
+
+    /* 11.0 Footer Area CSS */
+
+    .footer .container {
+        display: flex;
+    }
+
+    .footer ul,
+    .footer li {
+        margin-bottom: 0;
+    }
+
+    .footer span {
+        margin-left: auto;
+    }
+
+    /* 13.0 Greid Area CSS */
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        align-items: center;
+    }
+    .dark .grid-2 {
+        align-items: initial;
+    }
+
+    .grid-3 {
+        grid-template-areas: 
+            "grid-1-3 grid-2-3 grid-3-3"
+        ;
+    }
+
+}
+
+@media screen and (min-width: 1140px) {
+    /* 01.0 Reboot Area CSS */
+    .container {
+        max-width: 1100px;
+    }
+
+    /* 03.0 Header Area CSS */
+    .nav {
+        width: 70%;
+    }
+
+}
